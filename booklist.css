@@ -1,0 +1,122 @@
+body {
+    background-color: rgb(227, 250, 250);
+ 
+ }
+ 
+ .card {
+     width: 25vw;
+     height: 70vh;
+     border-radius: 30px;
+     background: #e0e0e0;
+     box-shadow: 15px 15px 30px #bebebe,
+                 -15px -15px 30px #ffffff;
+     position: relative;
+     left: 7vw;
+     top: 7vh;
+ }
+ .card1{
+     width: 25vw;
+     height: 70vh;
+     border-radius: 30px;
+     background: #e0e0e0;
+     box-shadow: 15px 15px 30px #bebebe,
+                 -15px -15px 30px #ffffff;
+     position: relative;
+     left: 38vw;
+     top: -63vh;
+ }
+ .card2{
+     width: 25vw;
+     height: 70vh;
+     border-radius: 30px;
+     background: #e0e0e0;
+     box-shadow: 15px 15px 30px #bebebe,
+                 -15px -15px 30px #ffffff;
+     position: relative;
+     left: 68vw;
+     top: -134vh;
+ }
+ .card3 {
+    width: 25vw;
+    height: 70vh;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+    position: relative;
+    left: 7vw;
+    top: -20vh;
+}
+ .img{
+     width: 20vw;
+     position: relative;
+     left: 2.5vw;
+     border-radius: 0.4vw;
+ }
+ .para{
+     width: 20vw;
+     text-align: center;
+     position: relative;
+     left: 2vw;
+ }
+ 
+ /* From uiverse.io by @Damithkumara */
+ button {
+     padding: 0.9em 1.8em;
+     text-transform: uppercase;
+     text-decoration: none;
+     letter-spacing: 4px;
+     color: transparent;
+     border: 3px solid rgb(164, 228, 248);
+     font-size: 14px;
+     position: relative;
+     font-family: inherit;
+     background: transparent;
+     position: relative;
+     left: 5vw;
+    }
+    
+    button::before {
+     content: "Issue book";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #363636;
+     color: rgb(145, 204, 219);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: all 0.5s;
+    }
+    
+    button:hover::before {
+     left: 100%;
+     transform: scale(0) rotateY(360deg);
+     opacity: 0;
+    }
+    
+    button::after {
+     content: "Issue book";
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background-color: #0f0e0e;
+     color: rgb(144, 227, 230);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: all 0.5s;
+     transform: scale(0) rotateY(0deg);
+     opacity: 0;
+    }
+    
+    button:hover::after {
+     left: 0;
+     transform: scale(1) rotateY(360deg);
+     opacity: 1;
+    }
+    
